@@ -41,7 +41,6 @@
       <div class="logo">心</div>
       <div>
         <h1>旅行里的不快 — 给同行的那个人</h1>
-        <p class="lead">把你写的长文字整理成页面，便于保存、分享或打印。</p>
       </div>
     </header>
 
@@ -67,28 +66,5 @@
 我確實想去煙花大會的 但我想到你一整天坐在那邊做生意 而不是靜下心體驗 我就不想去了
         </div>
       </div>
-
-      <div class="section">
-        <h2>使用说明</h2>
-        <p class="note">此页面为单文件 HTML/CSS 示例：直接保存为 <code>.html</code>，双击打开即可在浏览器查看或打印。你也可以复制内容到 GitHub/Gist 保存，或发给朋友阅读。</p>
-
-        <div class="controls">
-          <button class="btn" onclick="copyText()">复制文字到剪贴板</button>
-          <button class="btn" onclick="window.print()">打印页面</button>
-        </div>
-      </div>
-
-      <footer>— 页面自动生成 · 保护好你的隐私 ╰(艹艹)</footer>
-    </div>
-  </div>
-
-  <script>
-    function copyText(){
-      const text = document.querySelector('.msg').innerText;
-      navigator.clipboard.writeText(text).then(()=>{
-        alert('已复制到剪贴板！');
-      }).catch(()=>{alert('复制失败，请手动选择文本复制。');});
-    }
-  </script>
 </body>
 </html>
